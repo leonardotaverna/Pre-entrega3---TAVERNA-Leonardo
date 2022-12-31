@@ -10,7 +10,7 @@
 
 /* General */
 
-/* Header */
+
 
 body{
     background-color:#faeee7;
@@ -20,6 +20,8 @@ body{
     height:auto;
     
 }
+
+/* Header */
 
 header{
     height: 15vh;
@@ -67,9 +69,7 @@ h1{
     width:auto;
     grid-area: nav;
     height:auto;
-    
-     
-    
+        
     
 }
 
@@ -299,10 +299,95 @@ main{
 
 /* galeria.html */
 
-.galeria{
-    height:auto;
+.galeria__header{
+    display:grid;
 }
 
+
+
+.topnav__galeria {
+    overflow: hidden;
+    position: relative;
+    width:auto;
+    grid-area: nav;
+    height:auto;
+   
+    
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav__galeria #myLinks {
+    display: none;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    padding-top:35px;
+    
+     
+}
+
+#myLinks ul{
+    list-style: none;
+}
+
+/* Style navigation menu links */
+.topnav__galeria a {
+    color:#8a4358;
+    text-decoration: none;
+    display: block;
+       
+}
+
+
+.myLinks__menu{
+    font-size: 0.9em;
+    background-color: #faeee7;
+    transition: font-size 0.5s;
+    border:#ff8ba7 solid 1px;
+  
+}
+
+.myLinks__menu:hover{
+    background-color: #f5c9d3;
+}
+
+/* Style the hamburger menu */
+.topnav__galeria a.icon {
+    color:#8a4358;
+    display: block;
+    position: relative;
+    font-size: 25px;
+    left: 0;
+    top: 0;
+    
+}
+
+
+#redes__galeria{
+    grid-area: redes;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+    
+}
+
+#logoredes{
+    height: 4vh;
+    transition: height 0.5s;
+           
+}
+
+#logoredes:hover{
+    height: 4.5vh;
+       
+}
+
+
+
+/* main galeria.html */
+/* 
 .galeria__productos__fotos{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -326,7 +411,7 @@ main{
 
 }
 
-
+*/
 
 /* ustedes.html */
 
@@ -616,11 +701,36 @@ footer{
 
     /* galeria.html */
 
-    .galeria{
+    .galeria__header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+       
+    .topnav__galeria{
+        display:none;
+    }
+
+    #redes__galeria{
+        width: auto;
+        flex-direction: row;
+        
+    }
+
+    .w3-row-padding{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    
+    /* .galeria{ 
         justify-content:center;
     }
     
-    
+        
     .galeria__productos__fotos{
         display:grid;
         grid-template-columns: repeat(4, 1fr);
@@ -628,7 +738,7 @@ footer{
         align-items:center;
         
     }
-
+    */
 
     /* ustedes.html */
 
