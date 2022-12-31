@@ -387,6 +387,25 @@ main{
 
 
 /* main galeria.html */
+
+.w3-row-padding{
+    height:auto;
+}
+
+.w3-fourth{
+    transition: height 0.7s, width 0.7s;
+    
+}
+
+.w3-fourth:hover{
+    height:fit-content;
+    width:fit-content;
+    height:65vh;
+    width:125%;
+}
+
+
+
 /* 
 .galeria__productos__fotos{
     display:grid;
